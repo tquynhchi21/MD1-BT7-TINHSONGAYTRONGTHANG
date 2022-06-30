@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>MON</table>
+<input type="text" id="nhapThang"> <br>
+<button onclick="tinhNgay()">CHECK</button>
+<br>
+<h2 id="resul"></h2>
+
+<script>
+    function tinhNgay(){
+        let input = +document.getElementById("nhapThang").value;
+        switch (input){
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById("resul").innerText = "tháng" + input + "có 30 ngày"
+                break;
+            case 2:
+                document.getElementById("resul").innerText = "tháng" + input + "có 28 hoặc 29 ngày"
+                break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById("resul").innerText = "tháng" + input + "có 31 ngày";
+                break;
+            default:
+                document.getElementById("resul").innerText = "không có tháng này,nhập lại đê"
+        }
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
